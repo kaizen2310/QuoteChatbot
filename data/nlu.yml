@@ -1,0 +1,133 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey there
+      - good morning
+      - what's up
+      - howdy
+      - hey
+      - hi there
+      - good evening
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - take care
+      - I'm done
+      - that's all for now
+      - cya
+      - have a good day
+
+  - intent: request_motivation_quote
+    examples: |
+      - I need motivation
+      - give me a motivational quote
+      - motivate me
+      - I'm feeling low, inspire me
+      - need some encouragement
+      - I want to keep going but I'm tired
+      - give me something to push me forward
+      - I need a push
+      - feeling demotivated today
+      - I need energy to continue
+
+  - intent: request_inspiration_quote
+    examples: |
+      - inspire me
+      - I need inspiration
+      - give me an inspiring quote
+      - something to lift my spirit
+      - I want to feel inspired
+      - share something uplifting
+      - I need a new perspective
+      - give me hope
+      - something beautiful to think about
+      - I want an inspirational message
+
+  - intent: request_success_quote
+    examples: |
+      - give me a success quote
+      - quotes about success
+      - I want to achieve great things
+      - how do successful people think
+      - something about achieving goals
+      - I want to be successful
+      - quotes about hard work and success
+      - motivate me to reach my goals
+      - tell me about success
+      - I want to win in life
+
+  - intent: request_love_quote
+    examples: |
+      - give me a love quote
+      - quotes about love
+      - something romantic
+      - I'm in love
+      - share a beautiful love quote
+      - I want to express my feelings
+      - something about love and life
+      - romantic quotes please
+      - I need a quote for my partner
+      - something heartfelt about love
+
+  - intent: request_humor_quote
+    examples: |
+      - make me laugh
+      - give me a funny quote
+      - something humorous
+      - I want to smile
+      - tell me something funny
+      - I need a laugh
+      - humor me
+      - share a witty quote
+      - something lighthearted
+      - I need cheering up with humor
+
+  - intent: request_more_quotes
+    examples: |
+      - give me another one
+      - one more please
+      - more quotes
+      - I want more
+      - another quote
+      - keep going
+      - send me another
+      - yes more
+      - one more
+      - I want something else
+      - something different
+      - ya broh i want something else
+      - try again
+      - next one please
+      - go again
+      - more
+
+  - intent: affirm
+    examples: |
+      - yes
+      - yeah
+      - sure
+      - sounds good
+      - please
+      - of course
+      - definitely
+      - yep
+      - go ahead
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not really
+      - I'm good
+      - no thanks
+      - that's enough
+      - stop
+      - I'll pass
+

@@ -1,0 +1,18 @@
+# Virtual Environment
+venv/
+ENV/
+.env
+
+# Rasa specific
+.rasa/
+models/
+.python-version
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.env

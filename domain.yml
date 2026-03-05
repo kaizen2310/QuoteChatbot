@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - request_motivation_quote
+  - request_inspiration_quote
+  - request_success_quote
+  - request_love_quote
+  - request_humor_quote
+  - request_more_quotes
+
+entities:
+  - category
+
+slots:
+  quote_category:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: category
+
+responses:
+  utter_greet:
+    - text: "Hello! 👋 I'm your Quotes Bot. I can share quotes to inspire, motivate, or make you smile. What kind of quotes would you like?"
+    - text: "Hey there! 😊 Need some motivation, inspiration, love, success, or humor quotes? Just ask!"
+
+  utter_goodbye:
+    - text: "Goodbye! Remember — great things take time. See you soon! 👋"
+    - text: "Take care! Come back whenever you need some inspiration. 🌟"
+
+  utter_ask_more:
+    - text: "Would you like another quote or a different category?"
+    - text: "Did that resonate with you? Want another one or something from a different category?"
+
+  utter_cheer_up:
+    - text: "I'm sorry to hear that. Let me share something uplifting with you 💙"
+
+  utter_fallback:
+    - text: "I'm not quite sure what you mean. I can suggest quotes on Motivation, Inspiration, Success, Love, or Humor — which would you like?"
+
+actions:
+  - action_give_motivation_quote
+  - action_give_inspiration_quote
+  - action_give_success_quote
+  - action_give_love_quote
+  - action_give_humor_quote
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+#  - action_give_inspiration_quote
+#  - action_give_success_quote
+#  - action_give_love_quote
+#  - action_give_humor_quote

@@ -1,0 +1,50 @@
+version: "3.1"
+
+stories:
+  - story: user greets and requests motivation
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_motivation_quote
+      - action: action_give_motivation_quote
+      - action: utter_ask_more
+      - intent: affirm
+      - action: action_give_motivation_quote
+
+  - story: user requests inspiration then leaves
+    steps:
+      - intent: request_inspiration_quote
+      - action: action_give_inspiration_quote
+      - action: utter_ask_more
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: user requests multiple categories
+    steps:
+      - intent: request_success_quote
+      - action: action_give_success_quote
+      - action: utter_ask_more
+      - intent: request_love_quote
+      - action: action_give_love_quote
+      - action: utter_ask_more
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: user wants more of same category
+    steps:
+      - intent: request_motivation_quote
+      - action: action_give_motivation_quote
+      - action: utter_ask_more
+      - intent: request_more_quotes
+      - action: action_give_motivation_quote
+
+  - story: humor flow
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_humor_quote
+      - action: action_give_humor_quote
+      - action: utter_ask_more
+      - intent: request_more_quotes
+      - action: action_give_humor_quote
+

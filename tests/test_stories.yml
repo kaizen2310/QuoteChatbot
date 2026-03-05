@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+  - story: test motivation flow
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_motivation_quote
+      - action: action_give_motivation_quote
+
+  - story: test goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: test fallback
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback
