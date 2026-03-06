@@ -1,4 +1,4 @@
-# Quotes Chatbot v2
+# Quotes Chatbot 
 
 A conversational AI chatbot built with Rasa Open Source that delivers personalized quotes across five categories — motivation, inspiration, success, love, and humor — through natural language interaction.
 
