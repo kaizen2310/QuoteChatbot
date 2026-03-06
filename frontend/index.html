@@ -214,7 +214,7 @@
                 const testResponse = await fetch("http://localhost:5005/", { method: "HEAD" });
                 console.log("✅ Rasa server is reachable!");
             } catch (err) {
-                console.error("❌ Cannot reach Rasa:", err);
+                console.error("❌ Can't reach Rasa:", err);
                 appendMessage("⚠️ Rasa server not found. Make sure Terminal 2 is running:\n\nrasa run --enable-api --cors \"*\"", "bot");
             }
         });
