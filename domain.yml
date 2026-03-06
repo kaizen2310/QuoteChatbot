@@ -40,7 +40,7 @@ responses:
     - text: "I'm sorry to hear that. Let me share something uplifting with you 💙"
 
   utter_fallback:
-    - text: "I'm not quite sure what you mean. I can suggest quotes on Motivation, Inspiration, Success, Love, or Humor — which would you like?"
+    - text: "I'm not quite sure what you mean. I can suggest quotes on Motivation, Inspiration, Success, Love, or Humor — which would you like to listen?"
 
 actions:
   - action_give_motivation_quote
